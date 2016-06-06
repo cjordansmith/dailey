@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "gulp": "gulp",
     "start": "node ./bin/www"
   },
   "engines": {
@@ -17,17 +16,33 @@
     "debug": "~2.2.0",
     "express": "~4.13.1",
     "graceful-fs": "4.1.4",
+    "jshint": "^2.9.2",
     "morgan": "~1.6.1",
     "nodemon": "^1.9.2",
     "pug": "^2.0.0-beta2",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
+    "beeper": "^1.1.0",
+    "browser-sync": "^2.12.12",
+    "browserify": "^13.0.1",
+    "connect": "^3.4.1",
+    "del": "^2.2.0",
     "graceful-fs": "^4.1.4",
-    "gulp": "^3.9.1",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-4.0.build": "^4.0.0-build.a271520",
+    "gulp-cli": "^1.2.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-jshint": "^2.0.1",
     "gulp-less": "^3.1.0",
     "gulp-livereload": "^3.8.1",
+    "gulp-myth": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
-    "gulp-watch": "^4.3.6"
+    "gulp-watch": "^4.3.6",
+    "serve-static": "^1.10.3",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
