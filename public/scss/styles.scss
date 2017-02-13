@@ -1,0 +1,233 @@
+//  Font
+$font-stack:    "Lato", Arial, sans-serif;
+
+//  COLORS
+$primary: #574de3;
+$secondary: #92fbb8;
+$accent: #fb19ac;
+$alternate: #fafb01;
+$sky: #78b5f9;
+
+$status-bar: #e0e0e0;
+$app-bar: #f5f5f5;
+$background: #fafafa;
+$cards: #ffffff;
+
+$ptext-dark: rgba(33,33,33,1);
+$stext-dark: rgba(33,33,33,0.70);
+$htext-dark: rgba(33,33,33,0.50);
+$dtext-dark: rgba(33,33,33,0.12);
+
+$ptext-light: rgba(254,254,254,1);
+$stext-light: rgba(254,254,254,0.70);
+$htext-light: rgba(254,254,254,0.50);
+$dtext-light: rgba(254,254,254,0.12);
+
+$bg-dark: #2f2f2f;
+
+//  Text
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+h1 {
+  font-weight: 700;
+  color: $ptext-dark;
+}
+h3 {
+  font-weight: 400;
+}
+
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+//  MAIN
+
+html, body {
+    height: 100%;
+}
+
+body {
+  font:$font-stack;
+  color: $ptext-dark;
+  background-color: $background;
+  padding:0;
+  font-weight: 300;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+.container {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+
+//  Links
+a {
+  color: #3bc492;
+  word-wrap: break-word;
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:active, a:hover {
+  color: #c0392b;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:before, a:after {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: $ptext-light;
+  background: $sky;
+}
+
+//  Header
+#navigation {
+  background: $primary;
+  color: $ptext-light;
+  a {
+    color: $ptext-light;
+  }
+  a:active {
+    color: $ptext-light;
+    background: $sky;
+  }
+  a:hover {
+    color: $ptext-light;
+    background: $accent;
+  }
+}
+
+.navbar-default {
+  border: none;
+}
+
+.navbar-brand {
+  height: 50px;
+}
+
+
+
+#mainHeader {
+	background-color: $sky;
+	padding-top: 30px;
+  padding-bottom: 30px;
+  h1 {
+    margin-top: 0;
+  	color: $ptext-light;
+  	font-size: 70px;
+  }
+  h3 {
+    color: $ptext-light;
+  	font-size: 30px;
+  }
+  h5 {
+    color: $ptext-light;
+  	font-weight: 700;
+  	text-align: left;
+  }
+  p {
+    text-align: left;
+  	color: $ptext-light;
+  }
+}
+
+.page-header {
+  padding: 0;
+  margin: 0 0 30px 0;
+  background: none;
+  border: none;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+//  Request Form
+form {
+  padding: 26px;
+  color: #000;
+}
+.sr-only {
+  color: $ptext-dark;
+}
+
+.formHeader {
+  width: 100%;
+  background: $sky;
+  h2 {
+    color: $ptext-light;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 400;
+    display: block;
+    margin: 0;
+    padding: 6px 0;
+  }
+}
+#signupForm {
+	background: $status-bar;
+	color: $ptext-light;
+	padding: 0;
+	text-align: left;
+  border: 1px solid;
+  border-color: $dtext-dark;
+}
+
+
+//  Work
+.book-cover {
+  width: 15vw;
+  height: auto;
+}
+
+//  Features
+#features {
+	padding-top: 50px;
+	padding-bottom: 50px;
+  .ac a {
+    font-size: 20px;
+  }
+}
+
+//  Showcase
+#showcase {
+	display: block;
+	background-color: #34495e;
+	padding-top: 50px;
+	padding-bottom: 50px;
+  h1 {
+    color: white;
+  }
+}

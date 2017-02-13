@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1.centered= pageHeader.title
+      
+  .row
+    .col-xs-12.col-md-7
+      h3= pageHeader.strapline
+      br
+      p Elen sila lumenn omentilmo, Nae saian luume'. Cormamin lindua ele lle. Saesa omentien lle, vanya sulie Namaarie. Aa' lasser en lle coia orn n' omenta gurtha. Aa' i'sul nora lanne'lle. Aa' menle nauva calen ar' ta hwesta e' ale'quenle. Cormamin niuve tenna' ta elea lle au'. Lissenen ar' maska'lalaith tenna' lye omentuva.
+      p Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    .col-xs-12.col-md-4.col-md-offset-1
+      #signupForm
+        .formHeader
+          h2 Signup here
+        form.form-horizontal(action="#{url}", method="post", role="form")
+          - if (error == "val")
+            .alert.alert-danger(role="alert") All fields required, please try again
+          .form-group-static
+            label.sr-only.control-label(for="name") Name
+            input#name.form-control(name="name", placeholder='name')
+          br
+          .form-group-static
+            label.sr-only.control-label(for="email") Email
+            input#name.form-control(name="email", type='email', placeholder='name')
+          br
+          .checkbox
+            input(type='checkbox', value='')
+            label Subsribe for updates
+          br
+          button.btn.btn-success SUBSCRIBE
